@@ -1,0 +1,40 @@
+# Large Data & Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+Greetings_1of2/
+3477026897357566765.vrm
+
+# Node.js dependencies & builds
+**/node_modules/
+**/dist/
+**/build/
+**/coverage/
+
+# Python cache & virtual environments
+**/__pycache__/
+**/*.py[cod]
+**/*.pyo
+**/.pytest_cache/
+**/.venv/
+**/venv/
+**/env/
+
+# Environment files & Secrets
+**/.env
+**/.env.local
+**/.env.*.local
+!**/.env.example
+
+# Local SQLite databases & logs
+*.db
+*.sqlite
+*.sqlite3
+*.log
+**/*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini

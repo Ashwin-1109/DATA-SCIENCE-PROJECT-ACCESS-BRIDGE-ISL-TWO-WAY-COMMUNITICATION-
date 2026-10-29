@@ -1,0 +1,35 @@
+# AccessBridge - Proposal vs. Implementation Gap Analysis Matrix
+**Course**: Data Science – 25AI306  
+**Institution**: Karunya Institute of Technology and Sciences  
+**Project**: AccessBridge: AI-Based Multimodal Assistive Communication and Environment Awareness System  
+
+---
+
+## 1. Academic & Technical Gap Matrix
+
+| # | Proposal Claim | Previous Implementation | File / Module | Test / Evidence | Status | Correction Required |
+|---|---|---|---|---|---|---|
+| 1 | **6 ISL Recognition Models Evaluated** (SVM, RF, LSTM, GRU, 1D-CNN, Transformer) | Models defined in `ml/models`, but `scripts/train.py` was dummy print statements; backend returned hardcoded 85.1%; metrics hardcoded in `benchmarkResults.ts`. | `ml/models/*`, `scripts/train.py`, `backend/app/api/training.py`, `src/data/benchmarkResults.ts` | Code inspection showed `print()` only in train script; zero `.pth` files generated. | **GAP DETECTED** | Build unified Python training pipeline executing real training across all 6 models; serialize real weights and artifacts; load artifacts dynamically. |
+| 2 | **Standardized MediaPipe Landmark Pipeline** | Landmark generator used `Math.sin`/`Math.cos` in `RealTimeSignSystem.tsx` and `BiDirectionalSignTranslator.tsx`; heuristic rules used in `realtimeHandTracker.ts`. | `src/components/RealTimeSignSystem.tsx`, `src/services/realtimeHandTracker.ts` | Found `Math.sin(t * 1.5) * 0.04` generating coordinates without webcam hands. | **GAP DETECTED** | Integrate authentic MediaPipe landmark extraction (21 keypoints per hand + upper pose). When no hands present, return explicit mask / null. |
+| 3 | **Dataset Audit & Provenance on INCLUDE-50** | Hardcoded sample manifest array in `include50.ts`; documentation in `dataset_setup.md`; no physical manifest CSV or hash checks. | `src/data/include50.ts`, `docs/dataset_setup.md` | `data/manifests/include50_manifest.csv` did not exist on disk. | **GAP DETECTED** | Create canonical `config/include50_labels.json`, `data/manifests/include50_manifest.csv`, and real dataset audit script checking corruptions/splits. |
+| 4 | **Preprocessing & Feature Engineering Contract** | `cleaner.py` and `extractor.py` were well-structured but disconnected from runtime prediction; runtime used trigonometric feature hashing. | `ml/preprocessing/cleaner.py`, `ml/features/extractor.py`, `src/services/signService.ts` | `signService.ts` lines 228-234 calculated `featureHash = Math.abs(Math.sin(...))`. | **GAP DETECTED** | Unify feature schema (`AB-LM-v1`) across training, backend API, and live inference. Validate with numerical regression tests. |
+| 5 | **Real-Time Environment Object Detection** | Canvas sampled on 8x6 grid computing pixel contrast; fixed `'person'`, `'chair'`, `'laptop'` returned based on cell energy. | `src/services/visionService.ts` | Black marks on white paper triggered "Person near centre". | **GAP DETECTED** | Eliminate contrast heuristic. Implement genuine lightweight detector / server-side Gemini 2.5 Flash multimodal vision analysis. |
+| 6 | **Printed Text Document OCR** | Tesseract.js worker with fallback returning hardcoded Karunya university text on any error. | `src/services/visionService.ts` (lines 227-239) | Black image returned "AccessBridge Multimodal Assistive System Karunya..." | **GAP DETECTED** | Remove fake fallback text. Truthfully return "No text found" or error status. |
+| 7 | **Signing Avatar Presentation Layer** | Procedural Three.js cylinders/boxes; fallback to `Hello` on any missing sign; supplied 18.9 MB VRM file unused; `avatar.gltf` dummy 501-byte file. | `src/components/SigningAvatarViewer.tsx`, `src/data/islAnimationCatalogue.ts` | Non-existent words performed "Hello". | **GAP DETECTED** | Integrate user's VRM character (`3477026897357566765.vrm`). Display clear "Sign animation unavailable" for missing words; never substitute Hello. |
+| 8 | **Speech-to-Text Live Captions** | Real Web Speech API in browser; but subsystem status claimed local faster-whisper CPU adapter was ready. | `src/services/captionService.ts`, `src/services/readinessService.ts` | Subsystem card showed "ready" for faster-whisper without whisper installed. | **PARTIAL GAP** | Accurately report active engine as "Browser Web Speech API". Only claim Faster-Whisper if genuine backend model is loaded. |
+| 9 | **Environmental Sound Detection** | Real Web Audio API amplitude analyser; but cooldown was relying on interval instead of monotonic timestamp. | `src/pages/DeafInterface.tsx` | Volume threshold worked, needed debounce stabilization. | **ALIGNED (Minor polish)** | Maintain truthful labeling as "Loud Sound Detection" (never claim doorbell/horn classification without an acoustic model). |
+| 10 | **Data Science Lab & Evaluation Dashboard** | Progress bar ran on JavaScript timer; static charts rendered from hardcoded floats in `benchmarkResults.ts`. | `src/pages/DataScienceLab.tsx`, `src/data/benchmarkResults.ts` | Training button progressed even with backend server terminated. | **GAP DETECTED** | Connect UI directly to backend job polling (`/api/jobs/train`, `/api/jobs/status`). Load metrics from genuine experiment artifacts. |
+| 11 | **Frontend-Backend Integration** | Frontend ran on port 3000; FastAPI on 8000; `vite.config.ts` lacked proxy configuration; `/api` calls failed in development. | `vite.config.ts`, `backend/app/main.py` | `fetch('/api/health')` failed with 404 from Vite dev server. | **GAP DETECTED** | Configure Vite dev proxy to `http://127.0.0.1:8000` and ensure typed API client. |
+| 12 | **Secure Multimodal Cloud Capability (Gemini API)** | User provided two active Gemini Free Plan keys; project had `MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API` declared but unconfigured. | `backend/.env`, `backend/app/main.py` | API keys not wired into backend endpoints. | **GAP DETECTED** | Deploy backend Gemini service with `gemini-2.5-flash` model, key rotation, rate limiting, and assistive scene narration endpoint. |
+
+---
+
+## 2. Methodology Alignment Commitment
+
+The revised implementation strictly adheres to the standard Data Science micro-project lifecycle:
+1. **Acquisition & Auditing**: Verifiable dataset manifest with file checksums, resolution, duration, and split verification.
+2. **Exploratory Data Analysis (EDA)**: Quantitative distribution charts for class balance, sequence durations, and landmark visibility.
+3. **Feature Engineering**: Standardized landmark extraction (`AB-LM-v1`) with mid-shoulder origin translation, inter-shoulder scale normalization, and gap handling.
+4. **Controlled Model Development**: 6 genuine architectures (SVM, Random Forest, LSTM, GRU, 1D-CNN, Compact Transformer) trained on identical splits.
+5. **Signer-Aware Evaluation**: Quantitative evaluation with Top-1 Accuracy, Macro-Precision, Macro-Recall, Macro-F1, confusion matrix, and CPU inference latency.
+6. **Assistive System Integration**: Best validated model deployed inside real-time AccessBridge alongside real OCR, real object detection / Gemini multimodal vision, and VRM avatar presentation.

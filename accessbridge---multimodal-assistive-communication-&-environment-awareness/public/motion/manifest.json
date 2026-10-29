@@ -1,0 +1,62 @@
+{
+  "version": "1.0.0",
+  "dataset": "AI4Bharat INCLUDE Benchmark (Indian Sign Language)",
+  "disclaimer": "All animation trajectories are derived from computer vision retargeting and are strictly pending review by a certified ISL signer.",
+  "clips": [
+    {
+      "clipId": "motion_hello_01",
+      "word": "Hello",
+      "sourceVideo": "48. Hello/MVI_0029.MOV",
+      "reviewed": false,
+      "status": "pending review by an ISL signer",
+      "durationSec": 2.52,
+      "frameCount": 63,
+      "fps": 30,
+      "filePath": "/motion/motion_hello_01.json"
+    },
+    {
+      "clipId": "motion_how_are_you_01",
+      "word": "How are you",
+      "sourceVideo": "49. How are you/MVI_0033.MOV",
+      "reviewed": false,
+      "status": "pending review by an ISL signer",
+      "durationSec": 3.24,
+      "frameCount": 81,
+      "fps": 30,
+      "filePath": "/motion/motion_how_are_you_01.json"
+    },
+    {
+      "clipId": "motion_alright_01",
+      "word": "Alright",
+      "sourceVideo": "50. Alright/MVI_0037.MOV",
+      "reviewed": false,
+      "status": "pending review by an ISL signer",
+      "durationSec": 2.92,
+      "frameCount": 73,
+      "fps": 30,
+      "filePath": "/motion/motion_alright_01.json"
+    },
+    {
+      "clipId": "motion_good_morning_01",
+      "word": "Good Morning",
+      "sourceVideo": "51. Good Morning/MVI_0042.MOV",
+      "reviewed": false,
+      "status": "pending review by an ISL signer",
+      "durationSec": 3.4,
+      "frameCount": 85,
+      "fps": 30,
+      "filePath": "/motion/motion_good_morning_01.json"
+    },
+    {
+      "clipId": "motion_good_afternoon_01",
+      "word": "Good afternoon",
+      "sourceVideo": "52. Good afternoon/MVI_0046.MOV",
+      "reviewed": false,
+      "status": "pending review by an ISL signer",
+      "durationSec": 3.64,
+      "frameCount": 91,
+      "fps": 30,
+      "filePath": "/motion/motion_good_afternoon_01.json"
+    }
+  ]
+}

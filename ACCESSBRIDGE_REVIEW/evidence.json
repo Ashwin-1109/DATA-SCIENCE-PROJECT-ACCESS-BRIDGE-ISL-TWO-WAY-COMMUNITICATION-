@@ -1,0 +1,1080 @@
+{
+  "scope": "Structural inspection, array checks, pure preprocessing probes; no model inference, video decode, or cloud requests.",
+  "avatars": [
+    {
+      "path": "D:\\DS MICRO PROJECT\\3477026897357566765.vrm",
+      "bytes": 18900420,
+      "sha256": "28e2d34c84856f09abd92672b5d0b83614cb5794a3421e5674e6e2daac4dd4a1",
+      "vrm_version": "0.0",
+      "bone_names": [
+        "hips",
+        "leftUpperLeg",
+        "rightUpperLeg",
+        "leftLowerLeg",
+        "rightLowerLeg",
+        "leftFoot",
+        "rightFoot",
+        "spine",
+        "chest",
+        "neck",
+        "head",
+        "leftShoulder",
+        "rightShoulder",
+        "leftUpperArm",
+        "rightUpperArm",
+        "leftLowerArm",
+        "rightLowerArm",
+        "leftHand",
+        "rightHand",
+        "leftToes",
+        "rightToes",
+        "leftEye",
+        "rightEye",
+        "leftThumbProximal",
+        "leftThumbIntermediate",
+        "leftThumbDistal",
+        "leftIndexProximal",
+        "leftIndexIntermediate",
+        "leftIndexDistal",
+        "leftMiddleProximal",
+        "leftMiddleIntermediate",
+        "leftMiddleDistal",
+        "leftRingProximal",
+        "leftRingIntermediate",
+        "leftRingDistal",
+        "leftLittleProximal",
+        "leftLittleIntermediate",
+        "leftLittleDistal",
+        "rightThumbProximal",
+        "rightThumbIntermediate",
+        "rightThumbDistal",
+        "rightIndexProximal",
+        "rightIndexIntermediate",
+        "rightIndexDistal",
+        "rightMiddleProximal",
+        "rightMiddleIntermediate",
+        "rightMiddleDistal",
+        "rightRingProximal",
+        "rightRingIntermediate",
+        "rightRingDistal",
+        "rightLittleProximal",
+        "rightLittleIntermediate",
+        "rightLittleDistal",
+        "upperChest"
+      ],
+      "mesh_count": 3,
+      "skin_count": 3,
+      "animation_count": 0,
+      "expression_names": [
+        "Neutral",
+        "A",
+        "I",
+        "U",
+        "E",
+        "O",
+        "Blink",
+        "Blink_L",
+        "Blink_R",
+        "Angry",
+        "Fun",
+        "Joy",
+        "Sorrow",
+        "Surprised"
+      ]
+    },
+    {
+      "path": "D:\\DS MICRO PROJECT\\accessbridge---multimodal-assistive-communication-&-environment-awareness\\public\\models\\avatar.vrm",
+      "bytes": 18900420,
+      "sha256": "28e2d34c84856f09abd92672b5d0b83614cb5794a3421e5674e6e2daac4dd4a1",
+      "vrm_version": "0.0",
+      "bone_names": [
+        "hips",
+        "leftUpperLeg",
+        "rightUpperLeg",
+        "leftLowerLeg",
+        "rightLowerLeg",
+        "leftFoot",
+        "rightFoot",
+        "spine",
+        "chest",
+        "neck",
+        "head",
+        "leftShoulder",
+        "rightShoulder",
+        "leftUpperArm",
+        "rightUpperArm",
+        "leftLowerArm",
+        "rightLowerArm",
+        "leftHand",
+        "rightHand",
+        "leftToes",
+        "rightToes",
+        "leftEye",
+        "rightEye",
+        "leftThumbProximal",
+        "leftThumbIntermediate",
+        "leftThumbDistal",
+        "leftIndexProximal",
+        "leftIndexIntermediate",
+        "leftIndexDistal",
+        "leftMiddleProximal",
+        "leftMiddleIntermediate",
+        "leftMiddleDistal",
+        "leftRingProximal",
+        "leftRingIntermediate",
+        "leftRingDistal",
+        "leftLittleProximal",
+        "leftLittleIntermediate",
+        "leftLittleDistal",
+        "rightThumbProximal",
+        "rightThumbIntermediate",
+        "rightThumbDistal",
+        "rightIndexProximal",
+        "rightIndexIntermediate",
+        "rightIndexDistal",
+        "rightMiddleProximal",
+        "rightMiddleIntermediate",
+        "rightMiddleDistal",
+        "rightRingProximal",
+        "rightRingIntermediate",
+        "rightRingDistal",
+        "rightLittleProximal",
+        "rightLittleIntermediate",
+        "rightLittleDistal",
+        "upperChest"
+      ],
+      "mesh_count": 3,
+      "skin_count": 3,
+      "animation_count": 0,
+      "expression_names": [
+        "Neutral",
+        "A",
+        "I",
+        "U",
+        "E",
+        "O",
+        "Blink",
+        "Blink_L",
+        "Blink_R",
+        "Angry",
+        "Fun",
+        "Joy",
+        "Sorrow",
+        "Surprised"
+      ]
+    }
+  ],
+  "arrays": [
+    {
+      "name": "test_labels.npy",
+      "shape": [
+        16
+      ],
+      "dtype": "int64",
+      "all_finite": true,
+      "class_counts": {
+        "0": 3,
+        "1": 3,
+        "2": 3,
+        "3": 3,
+        "4": 4
+      }
+    },
+    {
+      "name": "test_sequences.npy",
+      "shape": [
+        16,
+        32,
+        138
+      ],
+      "dtype": "float32",
+      "all_finite": true
+    },
+    {
+      "name": "test_tabular.npy",
+      "shape": [
+        16,
+        291
+      ],
+      "dtype": "float32",
+      "all_finite": true
+    },
+    {
+      "name": "train_labels.npy",
+      "shape": [
+        75
+      ],
+      "dtype": "int64",
+      "all_finite": true,
+      "class_counts": {
+        "0": 15,
+        "1": 15,
+        "2": 15,
+        "3": 15,
+        "4": 15
+      }
+    },
+    {
+      "name": "train_sequences.npy",
+      "shape": [
+        75,
+        32,
+        138
+      ],
+      "dtype": "float32",
+      "all_finite": true
+    },
+    {
+      "name": "train_tabular.npy",
+      "shape": [
+        75,
+        291
+      ],
+      "dtype": "float32",
+      "all_finite": true
+    },
+    {
+      "name": "val_labels.npy",
+      "shape": [
+        15
+      ],
+      "dtype": "int64",
+      "all_finite": true,
+      "class_counts": {
+        "0": 3,
+        "1": 3,
+        "2": 3,
+        "3": 3,
+        "4": 3
+      }
+    },
+    {
+      "name": "val_sequences.npy",
+      "shape": [
+        15,
+        32,
+        138
+      ],
+      "dtype": "float32",
+      "all_finite": true
+    },
+    {
+      "name": "val_tabular.npy",
+      "shape": [
+        15,
+        291
+      ],
+      "dtype": "float32",
+      "all_finite": true
+    }
+  ],
+  "manifest": {
+    "rows": 106,
+    "columns": [
+      "video_path",
+      "relative_path",
+      "filename",
+      "folder_name",
+      "class_id",
+      "class_name",
+      "original_include_id",
+      "file_size_bytes",
+      "sha256",
+      "width",
+      "height",
+      "fps",
+      "frame_count",
+      "duration_seconds",
+      "is_decodable",
+      "first_frame_read",
+      "split"
+    ],
+    "missing_video_paths": 0,
+    "unique_stored_hashes": 106,
+    "note": "Stored manifest hashes counted; full video hashes not recomputed."
+  },
+  "video_folders": {
+    "48. Hello": 21,
+    "49. How are you": 21,
+    "50. Alright": 21,
+    "51. Good Morning": 21,
+    "52. Good afternoon": 22
+  },
+  "checkpoint_structure": [
+    {
+      "file": "bigru_best.pth",
+      "bytes": 1320053,
+      "tensor_storage_files": 20,
+      "transformer_layer_indices": []
+    },
+    {
+      "file": "bilstm_best.pth",
+      "bytes": 1724047,
+      "tensor_storage_files": 20,
+      "transformer_layer_indices": []
+    },
+    {
+      "file": "cnn1d_best.pth",
+      "bytes": 482933,
+      "tensor_storage_files": 23,
+      "transformer_layer_indices": []
+    },
+    {
+      "file": "transformer_best.pth",
+      "bytes": 1744103,
+      "tensor_storage_files": 45,
+      "transformer_layer_indices": [
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  ],
+  "source_inventory": [
+    {
+      "path": "artifacts/experiments/benchmark_report.md",
+      "lines": 28,
+      "bytes": 1557
+    },
+    {
+      "path": "artifacts/experiments/evaluation_comparison.json",
+      "lines": 588,
+      "bytes": 8755
+    },
+    {
+      "path": "artifacts/models/active_model_config.json",
+      "lines": 19,
+      "bytes": 421
+    },
+    {
+      "path": "backend/app/api/gemini.py",
+      "lines": 40,
+      "bytes": 1264,
+      "symbols": [
+        "DescribeSceneRequest",
+        "DescribeSceneResponse",
+        "describe_scene",
+        "get_gemini_status"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "backend/app/api/readiness.py",
+      "lines": 94,
+      "bytes": 3718,
+      "symbols": [
+        "get_health",
+        "get_subsystems"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "backend/app/api/sign.py",
+      "lines": 41,
+      "bytes": 1653,
+      "symbols": [
+        "predict_sign",
+        "get_vocabulary",
+        "get_active_model_status",
+        "reload_model_checkpoint"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "backend/app/api/training.py",
+      "lines": 148,
+      "bytes": 5258,
+      "symbols": [
+        "execute_training_worker",
+        "create_training_job",
+        "get_job_status",
+        "cancel_job",
+        "get_experiment_reports",
+        "progress_callback"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "backend/app/core/config.py",
+      "lines": 26,
+      "bytes": 696,
+      "symbols": [],
+      "syntax_valid": true
+    },
+    {
+      "path": "backend/app/database/models.py",
+      "lines": 51,
+      "bytes": 2063,
+      "symbols": [
+        "SessionRecord",
+        "TrainingJobRecord",
+        "ExperimentRecord"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "backend/app/database/session.py",
+      "lines": 20,
+      "bytes": 489,
+      "symbols": [
+        "get_db"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "backend/app/main.py",
+      "lines": 66,
+      "bytes": 2070,
+      "symbols": [
+        "health"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "backend/app/schemas/schemas.py",
+      "lines": 70,
+      "bytes": 1880,
+      "symbols": [
+        "HealthResponse",
+        "SubsystemStatusResponse",
+        "LandmarkPointSchema",
+        "FrameLandmarksSchema",
+        "SignPredictRequest",
+        "SignPredictResponse",
+        "TrainingJobCreateRequest",
+        "TrainingJobStatusResponse"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "backend/app/services/gemini_service.py",
+      "lines": 169,
+      "bytes": 7096,
+      "symbols": [
+        "GeminiService",
+        "__init__",
+        "get_active_key",
+        "rotate_key",
+        "is_available",
+        "describe_scene",
+        "check_health"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "backend/app/services/sign_inference_service.py",
+      "lines": 310,
+      "bytes": 14693,
+      "symbols": [
+        "SignInferenceEngine",
+        "__init__",
+        "discover_and_load_checkpoint",
+        "load_pytorch_checkpoint",
+        "load_classical_checkpoint",
+        "is_model_loaded",
+        "frames_to_sequential_tensor",
+        "predict",
+        "predict_sequence_tensor"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "backend/requirements.txt",
+      "lines": 33,
+      "bytes": 675
+    },
+    {
+      "path": "config/include50_labels.json",
+      "lines": 57,
+      "bytes": 3994
+    },
+    {
+      "path": "config/include_greetings_labels.json",
+      "lines": 54,
+      "bytes": 1298
+    },
+    {
+      "path": "data/processed/extraction_metadata.json",
+      "lines": 80,
+      "bytes": 1618
+    },
+    {
+      "path": "data/reports/dataset_audit.json",
+      "lines": 41,
+      "bytes": 877
+    },
+    {
+      "path": "data/reports/dataset_audit.md",
+      "lines": 39,
+      "bytes": 1361
+    },
+    {
+      "path": "data/reports/eda_report.md",
+      "lines": 42,
+      "bytes": 1564
+    },
+    {
+      "path": "data/reports/landmark_extraction_report.md",
+      "lines": 37,
+      "bytes": 1551
+    },
+    {
+      "path": "docs/architecture.md",
+      "lines": 33,
+      "bytes": 1994
+    },
+    {
+      "path": "docs/CURRENT_SYSTEM_AUDIT.md",
+      "lines": 325,
+      "bytes": 24039
+    },
+    {
+      "path": "docs/data_science_methodology.md",
+      "lines": 38,
+      "bytes": 2035
+    },
+    {
+      "path": "docs/dataset_setup.md",
+      "lines": 40,
+      "bytes": 1369
+    },
+    {
+      "path": "docs/demo_checklist.md",
+      "lines": 33,
+      "bytes": 2153
+    },
+    {
+      "path": "docs/limitations.md",
+      "lines": 15,
+      "bytes": 1707
+    },
+    {
+      "path": "docs/PROPOSAL_ALIGNMENT_REPORT.md",
+      "lines": 35,
+      "bytes": 7033
+    },
+    {
+      "path": "docs/training_guide.md",
+      "lines": 36,
+      "bytes": 1701
+    },
+    {
+      "path": "index.html",
+      "lines": 18,
+      "bytes": 1116
+    },
+    {
+      "path": "metadata.json",
+      "lines": 6,
+      "bytes": 450
+    },
+    {
+      "path": "ml/configs/train_config.yaml",
+      "lines": 72,
+      "bytes": 1465
+    },
+    {
+      "path": "ml/features/extractor.py",
+      "lines": 59,
+      "bytes": 2312,
+      "symbols": [
+        "FeatureExtractor",
+        "__init__",
+        "extract_tabular_features"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "ml/models/cnn1d_model.py",
+      "lines": 50,
+      "bytes": 1508,
+      "symbols": [
+        "Conv1DSignModel",
+        "__init__",
+        "forward"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "ml/models/gru_model.py",
+      "lines": 40,
+      "bytes": 1095,
+      "symbols": [
+        "BiGRUSignModel",
+        "__init__",
+        "forward"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "ml/models/lstm_model.py",
+      "lines": 39,
+      "bytes": 1059,
+      "symbols": [
+        "BiLSTMSignModel",
+        "__init__",
+        "forward"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "ml/models/rf_model.py",
+      "lines": 32,
+      "bytes": 945,
+      "symbols": [
+        "create_random_forest_model",
+        "create_svm_model"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "ml/models/transformer_model.py",
+      "lines": 66,
+      "bytes": 2342,
+      "symbols": [
+        "PositionalEncoding",
+        "CompactSignTransformer",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "ml/preprocessing/cleaner.py",
+      "lines": 88,
+      "bytes": 3111,
+      "symbols": [
+        "LandmarkCleaner",
+        "__init__",
+        "normalize_frame_coordinates",
+        "interpolate_short_gaps",
+        "temporal_resample"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "ml/training/__init__.py",
+      "lines": 4,
+      "bytes": 128,
+      "symbols": [],
+      "syntax_valid": true
+    },
+    {
+      "path": "ml/training/train_runner.py",
+      "lines": 242,
+      "bytes": 8365,
+      "symbols": [
+        "set_seed",
+        "run_model_training"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "notebooks/01_dataset_audit.ipynb",
+      "lines": 47,
+      "bytes": 1351,
+      "cells": [
+        {
+          "type": "markdown",
+          "lines": 5,
+          "executed": false
+        },
+        {
+          "type": "code",
+          "lines": 9,
+          "executed": false
+        },
+        {
+          "type": "markdown",
+          "lines": 2,
+          "executed": false
+        }
+      ]
+    },
+    {
+      "path": "notebooks/02_landmark_extraction.ipynb",
+      "lines": 36,
+      "bytes": 865,
+      "cells": [
+        {
+          "type": "markdown",
+          "lines": 4,
+          "executed": false
+        },
+        {
+          "type": "code",
+          "lines": 7,
+          "executed": false
+        }
+      ]
+    },
+    {
+      "path": "notebooks/03_baseline_training.ipynb",
+      "lines": 32,
+      "bytes": 756,
+      "cells": [
+        {
+          "type": "markdown",
+          "lines": 4,
+          "executed": false
+        },
+        {
+          "type": "code",
+          "lines": 3,
+          "executed": false
+        }
+      ]
+    },
+    {
+      "path": "notebooks/04_sequence_model_training.ipynb",
+      "lines": 32,
+      "bytes": 731,
+      "cells": [
+        {
+          "type": "markdown",
+          "lines": 4,
+          "executed": false
+        },
+        {
+          "type": "code",
+          "lines": 3,
+          "executed": false
+        }
+      ]
+    },
+    {
+      "path": "notebooks/05_evaluation_export.ipynb",
+      "lines": 31,
+      "bytes": 725,
+      "cells": [
+        {
+          "type": "markdown",
+          "lines": 4,
+          "executed": false
+        },
+        {
+          "type": "code",
+          "lines": 2,
+          "executed": false
+        }
+      ]
+    },
+    {
+      "path": "package.json",
+      "lines": 45,
+      "bytes": 1191
+    },
+    {
+      "path": "public/models/avatar.gltf",
+      "lines": 26,
+      "bytes": 501
+    },
+    {
+      "path": "README.md",
+      "lines": 80,
+      "bytes": 4349
+    },
+    {
+      "path": "scripts/build_manifest.py",
+      "lines": 233,
+      "bytes": 9077,
+      "symbols": [
+        "compute_sha256",
+        "inspect_video",
+        "main"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "scripts/check_environment.py",
+      "lines": 62,
+      "bytes": 1847,
+      "symbols": [
+        "check"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "scripts/extract_landmarks.py",
+      "lines": 331,
+      "bytes": 13052,
+      "symbols": [
+        "init_landmarkers",
+        "extract_landmarks_from_video",
+        "main"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "scripts/generate_eda.py",
+      "lines": 149,
+      "bytes": 7080,
+      "symbols": [
+        "main"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "scripts/train.py",
+      "lines": 53,
+      "bytes": 2138,
+      "symbols": [
+        "main",
+        "progress_callback"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "scripts/train_models.py",
+      "lines": 419,
+      "bytes": 18663,
+      "symbols": [
+        "set_seed",
+        "evaluate_classical_model",
+        "train_torch_model",
+        "plot_confusion_matrices",
+        "plot_benchmark_comparison",
+        "main"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "setup.bat",
+      "lines": 34,
+      "bytes": 1009
+    },
+    {
+      "path": "setup.sh",
+      "lines": 27,
+      "bytes": 747
+    },
+    {
+      "path": "src/App.tsx",
+      "lines": 167,
+      "bytes": 5927
+    },
+    {
+      "path": "src/components/BiDirectionalSignTranslator.tsx",
+      "lines": 466,
+      "bytes": 16846
+    },
+    {
+      "path": "src/components/Footer.tsx",
+      "lines": 33,
+      "bytes": 1584
+    },
+    {
+      "path": "src/components/Navbar.tsx",
+      "lines": 224,
+      "bytes": 9713
+    },
+    {
+      "path": "src/components/RealisticHandSignPerformer.tsx",
+      "lines": 513,
+      "bytes": 20730
+    },
+    {
+      "path": "src/components/RealTimeSignSystem.tsx",
+      "lines": 429,
+      "bytes": 18511
+    },
+    {
+      "path": "src/components/SigningAvatarViewer.tsx",
+      "lines": 692,
+      "bytes": 28367
+    },
+    {
+      "path": "src/components/SignViewer.tsx",
+      "lines": 723,
+      "bytes": 28307
+    },
+    {
+      "path": "src/components/ui/StatusDot.tsx",
+      "lines": 80,
+      "bytes": 1918
+    },
+    {
+      "path": "src/data/benchmarkResults.ts",
+      "lines": 246,
+      "bytes": 9232
+    },
+    {
+      "path": "src/data/include50.ts",
+      "lines": 104,
+      "bytes": 11238
+    },
+    {
+      "path": "src/data/islAnimationCatalogue.ts",
+      "lines": 521,
+      "bytes": 26306
+    },
+    {
+      "path": "src/index.css",
+      "lines": 54,
+      "bytes": 1284
+    },
+    {
+      "path": "src/main.tsx",
+      "lines": 5,
+      "bytes": 159
+    },
+    {
+      "path": "src/pages/BlindInterface.tsx",
+      "lines": 442,
+      "bytes": 18731
+    },
+    {
+      "path": "src/pages/DataScienceLab.tsx",
+      "lines": 593,
+      "bytes": 29723
+    },
+    {
+      "path": "src/pages/DeafInterface.tsx",
+      "lines": 527,
+      "bytes": 22148
+    },
+    {
+      "path": "src/pages/EnvironmentReader.tsx",
+      "lines": 623,
+      "bytes": 27351
+    },
+    {
+      "path": "src/pages/EvaluationDashboard.tsx",
+      "lines": 495,
+      "bytes": 24423
+    },
+    {
+      "path": "src/pages/HomeReadiness.tsx",
+      "lines": 366,
+      "bytes": 17458
+    },
+    {
+      "path": "src/pages/LiveCaptions.tsx",
+      "lines": 382,
+      "bytes": 15867
+    },
+    {
+      "path": "src/pages/MuteInterface.tsx",
+      "lines": 555,
+      "bytes": 22035
+    },
+    {
+      "path": "src/pages/ProcessorPanel.tsx",
+      "lines": 309,
+      "bytes": 14224
+    },
+    {
+      "path": "src/pages/Settings.tsx",
+      "lines": 299,
+      "bytes": 12427
+    },
+    {
+      "path": "src/pages/SignCommunication.tsx",
+      "lines": 911,
+      "bytes": 39120
+    },
+    {
+      "path": "src/services/animationCatalogue.ts",
+      "lines": 258,
+      "bytes": 10272
+    },
+    {
+      "path": "src/services/cameraService.ts",
+      "lines": 217,
+      "bytes": 6411
+    },
+    {
+      "path": "src/services/captionService.ts",
+      "lines": 140,
+      "bytes": 4296
+    },
+    {
+      "path": "src/services/imageStudioService.ts",
+      "lines": 116,
+      "bytes": 3588
+    },
+    {
+      "path": "src/services/readinessService.ts",
+      "lines": 194,
+      "bytes": 8531
+    },
+    {
+      "path": "src/services/realtimeHandTracker.ts",
+      "lines": 273,
+      "bytes": 9667
+    },
+    {
+      "path": "src/services/signService.ts",
+      "lines": 236,
+      "bytes": 7970
+    },
+    {
+      "path": "src/services/soundEffectService.ts",
+      "lines": 119,
+      "bytes": 3118
+    },
+    {
+      "path": "src/services/storageService.ts",
+      "lines": 126,
+      "bytes": 3330
+    },
+    {
+      "path": "src/services/ttsService.ts",
+      "lines": 123,
+      "bytes": 2925
+    },
+    {
+      "path": "src/services/visionService.ts",
+      "lines": 193,
+      "bytes": 6651
+    },
+    {
+      "path": "src/types/index.ts",
+      "lines": 237,
+      "bytes": 5561
+    },
+    {
+      "path": "start.bat",
+      "lines": 28,
+      "bytes": 884
+    },
+    {
+      "path": "start.sh",
+      "lines": 23,
+      "bytes": 717
+    },
+    {
+      "path": "tsconfig.json",
+      "lines": 27,
+      "bytes": 538
+    },
+    {
+      "path": "vite.config.ts",
+      "lines": 29,
+      "bytes": 856
+    }
+  ],
+  "preprocessing_probes": {
+    "gap_limit": 3,
+    "gap_length_tested": 5,
+    "long_gap_was_modified": true,
+    "normalized_missing_hand_has_nonzero_values": true,
+    "feature_dimension": 291
+  },
+  "archives": [
+    {
+      "file": "accessbridge---multimodal-assistive-communication-&-environment-awareness.zip",
+      "bytes": 648819,
+      "entries": 103,
+      "video_entries": 0
+    },
+    {
+      "file": "Greetings_1of2.zip",
+      "bytes": 1573733886,
+      "entries": 112,
+      "video_entries": 106
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "dataset_name": "INCLUDE-GREETING-SUBSET-v1",
+  "source": "AI4Bharat INCLUDE (Greetings 1 of 2)",
+  "canonical_version": "1.0.0",
+  "num_classes": 5,
+  "total_samples": 106,
+  "classes": [
+    {
+      "id": 0,
+      "original_include_id": 48,
+      "folder_name": "48. Hello",
+      "canonical_name": "Hello",
+      "category": "Greetings",
+      "two_handed": false,
+      "sample_count": 21
+    },
+    {
+      "id": 1,
+      "original_include_id": 49,
+      "folder_name": "49. How are you",
+      "canonical_name": "How are you",
+      "category": "Greetings",
+      "two_handed": true,
+      "sample_count": 21
+    },
+    {
+      "id": 2,
+      "original_include_id": 50,
+      "folder_name": "50. Alright",
+      "canonical_name": "Alright",
+      "category": "Greetings",
+      "two_handed": false,
+      "sample_count": 21
+    },
+    {
+      "id": 3,
+      "original_include_id": 51,
+      "folder_name": "51. Good Morning",
+      "canonical_name": "Good Morning",
+      "category": "Greetings",
+      "two_handed": true,
+      "sample_count": 21
+    },
+    {
+      "id": 4,
+      "original_include_id": 52,
+      "folder_name": "52. Good afternoon",
+      "canonical_name": "Good afternoon",
+      "category": "Greetings",
+      "two_handed": true,
+      "sample_count": 22
+    }
+  ]
+}

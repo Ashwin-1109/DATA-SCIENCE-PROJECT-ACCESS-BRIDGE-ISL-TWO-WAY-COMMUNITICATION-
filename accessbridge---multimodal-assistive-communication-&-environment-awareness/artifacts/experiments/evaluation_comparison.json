@@ -1,0 +1,588 @@
+{
+  "results": [
+    {
+      "model_name": "SVM (RBF Kernel)",
+      "type": "Classical (Tabular 291-dim)",
+      "test_accuracy": 0.6875,
+      "test_macro_f1": 0.6548,
+      "test_macro_precision": 0.79,
+      "test_macro_recall": 0.6833,
+      "inference_latency_ms": 0.45,
+      "confusion_matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          3
+        ]
+      ],
+      "predictions": [
+        4,
+        4,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4
+      ],
+      "ground_truth": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "model_name": "Random Forest",
+      "type": "Classical (Tabular 291-dim)",
+      "test_accuracy": 0.875,
+      "test_macro_f1": 0.8743,
+      "test_macro_precision": 0.9,
+      "test_macro_recall": 0.8833,
+      "inference_latency_ms": 79.26,
+      "confusion_matrix": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          3
+        ]
+      ],
+      "predictions": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        3,
+        4
+      ],
+      "ground_truth": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "model_name": "Bi-LSTM",
+      "type": "Deep Sequential (32x138)",
+      "test_accuracy": 0.625,
+      "test_macro_f1": 0.6505,
+      "test_macro_precision": 0.68,
+      "test_macro_recall": 0.65,
+      "inference_latency_ms": 3.26,
+      "trainable_parameters": 429317,
+      "best_val_accuracy": 0.9333,
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          2,
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "predictions": [
+        4,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        0,
+        2,
+        3,
+        3,
+        4,
+        3,
+        4,
+        0,
+        0
+      ],
+      "ground_truth": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "model_name": "Bi-GRU",
+      "type": "Deep Sequential (32x138)",
+      "test_accuracy": 0.875,
+      "test_macro_f1": 0.8648,
+      "test_macro_precision": 0.8833,
+      "test_macro_recall": 0.8667,
+      "inference_latency_ms": 10.07,
+      "trainable_parameters": 328325,
+      "best_val_accuracy": 0.9333,
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      ],
+      "predictions": [
+        3,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        0,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4
+      ],
+      "ground_truth": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "model_name": "1D-CNN",
+      "type": "Deep Sequential (32x138)",
+      "test_accuracy": 0.875,
+      "test_macro_f1": 0.8833,
+      "test_macro_precision": 0.8833,
+      "test_macro_recall": 0.8833,
+      "inference_latency_ms": 1.02,
+      "trainable_parameters": 118213,
+      "best_val_accuracy": 1.0,
+      "confusion_matrix": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          3
+        ]
+      ],
+      "predictions": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        4,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4
+      ],
+      "ground_truth": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "model_name": "Compact Transformer",
+      "type": "Deep Sequential (32x138)",
+      "test_accuracy": 0.8125,
+      "test_macro_f1": 0.8148,
+      "test_macro_precision": 0.8333,
+      "test_macro_recall": 0.8167,
+      "inference_latency_ms": 2.26,
+      "trainable_parameters": 424069,
+      "best_val_accuracy": 0.9333,
+      "confusion_matrix": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          3
+        ]
+      ],
+      "predictions": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        3,
+        3,
+        4,
+        3,
+        4,
+        4,
+        4
+      ],
+      "ground_truth": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4
+      ]
+    }
+  ],
+  "best_model": {
+    "model_name": "1D-CNN",
+    "type": "Deep Sequential (32x138)",
+    "test_accuracy": 0.875,
+    "test_macro_f1": 0.8833,
+    "test_macro_precision": 0.8833,
+    "test_macro_recall": 0.8833,
+    "inference_latency_ms": 1.02,
+    "trainable_parameters": 118213,
+    "best_val_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        3
+      ]
+    ],
+    "predictions": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      4,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4
+    ],
+    "ground_truth": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4
+    ]
+  }
+}

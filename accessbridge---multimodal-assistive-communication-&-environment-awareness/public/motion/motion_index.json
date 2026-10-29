@@ -1,0 +1,42 @@
+[
+  {
+    "clipId": "motion_hello_01",
+    "phrase": "Hello",
+    "durationSec": 2.52,
+    "frameCount": 63,
+    "sourceAssetId": "48. Hello/MVI_0029.MOV",
+    "reviewStatus": "unreviewed"
+  },
+  {
+    "clipId": "motion_how_are_you_01",
+    "phrase": "How are you",
+    "durationSec": 3.24,
+    "frameCount": 81,
+    "sourceAssetId": "49. How are you/MVI_0033.MOV",
+    "reviewStatus": "unreviewed"
+  },
+  {
+    "clipId": "motion_alright_01",
+    "phrase": "Alright",
+    "durationSec": 2.92,
+    "frameCount": 73,
+    "sourceAssetId": "50. Alright/MVI_0037.MOV",
+    "reviewStatus": "unreviewed"
+  },
+  {
+    "clipId": "motion_good_morning_01",
+    "phrase": "Good Morning",
+    "durationSec": 3.4,
+    "frameCount": 85,
+    "sourceAssetId": "51. Good Morning/MVI_0042.MOV",
+    "reviewStatus": "unreviewed"
+  },
+  {
+    "clipId": "motion_good_afternoon_01",
+    "phrase": "Good afternoon",
+    "durationSec": 3.64,
+    "frameCount": 91,
+    "sourceAssetId": "52. Good afternoon/MVI_0046.MOV",
+    "reviewStatus": "unreviewed"
+  }
+]

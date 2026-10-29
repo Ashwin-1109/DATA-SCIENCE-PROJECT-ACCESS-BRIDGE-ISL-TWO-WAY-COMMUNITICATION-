@@ -1,0 +1,60 @@
+{
+  "dataset_type": "Signer-Wise Split Benchmark",
+  "vocabulary_size": 28,
+  "classes": [
+    "Thank you",
+    "Please",
+    "Sorry",
+    "Yes",
+    "No",
+    "Help",
+    "Water",
+    "Food",
+    "Doctor",
+    "Medicine",
+    "Hospital",
+    "Pain",
+    "Emergency",
+    "Mother",
+    "Father",
+    "Home",
+    "Toilet",
+    "Money",
+    "Good",
+    "Bad",
+    "Stop",
+    "Come",
+    "Go",
+    "Name",
+    "Where",
+    "What",
+    "Time",
+    "Friend"
+  ],
+  "train_signers": [
+    "signer_01",
+    "signer_02",
+    "signer_03"
+  ],
+  "val_signers": [
+    "signer_04"
+  ],
+  "heldout_test_signers": [
+    "signer_heldout"
+  ],
+  "augmentations": [
+    "3d_rotation",
+    "scale",
+    "jitter",
+    "time_stretch",
+    "mirror"
+  ],
+  "metrics": {
+    "heldout_signer_accuracy": 0.0357,
+    "macro_f1": 0.0025,
+    "precision": 0.0013,
+    "recall": 0.0357
+  },
+  "real_recorded_samples_used": 0,
+  "timestamp": 1791483550.41401
+}

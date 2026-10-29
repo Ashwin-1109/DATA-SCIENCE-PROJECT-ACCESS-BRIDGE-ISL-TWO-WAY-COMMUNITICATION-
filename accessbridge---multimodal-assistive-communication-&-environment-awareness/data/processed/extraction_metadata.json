@@ -1,0 +1,80 @@
+{
+  "dataset_name": "INCLUDE-GREETING-SUBSET-v1",
+  "total_extracted": 106,
+  "total_manifest": 106,
+  "extraction_duration_seconds": 650.84,
+  "tensor_sequence_shape": [
+    32,
+    138
+  ],
+  "tabular_dimension": 291,
+  "landmark_breakdown": {
+    "right_hand": "21 landmarks x 3 coords (indices 0:63)",
+    "left_hand": "21 landmarks x 3 coords (indices 63:126)",
+    "upper_body_pose": "4 landmarks (left/right shoulder, left/right elbow) x 3 coords (indices 126:138)"
+  },
+  "presence_statistics": {
+    "right_hand_average_coverage": 0.7306952459466887,
+    "left_hand_average_coverage": 0.7569387194284144,
+    "pose_average_coverage": 1.0
+  },
+  "splits": {
+    "train": {
+      "samples": 75,
+      "sequence_shape": [
+        75,
+        32,
+        138
+      ],
+      "tabular_shape": [
+        75,
+        291
+      ],
+      "class_distribution": {
+        "0": 15,
+        "1": 15,
+        "2": 15,
+        "3": 15,
+        "4": 15
+      }
+    },
+    "val": {
+      "samples": 15,
+      "sequence_shape": [
+        15,
+        32,
+        138
+      ],
+      "tabular_shape": [
+        15,
+        291
+      ],
+      "class_distribution": {
+        "0": 3,
+        "1": 3,
+        "2": 3,
+        "3": 3,
+        "4": 3
+      }
+    },
+    "test": {
+      "samples": 16,
+      "sequence_shape": [
+        16,
+        32,
+        138
+      ],
+      "tabular_shape": [
+        16,
+        291
+      ],
+      "class_distribution": {
+        "0": 3,
+        "1": 3,
+        "2": 3,
+        "3": 3,
+        "4": 4
+      }
+    }
+  }
+}

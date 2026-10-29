@@ -1,0 +1,72 @@
+# AccessBridge - INCLUDE-50 Training Configuration
+# Protocol: 3,420 clips (Train: 2,394, Val: 342, Test: 684)
+
+dataset:
+  name: "INCLUDE-50"
+  num_classes: 50
+  raw_dir: "data/raw/INCLUDE50"
+  manifest_path: "data/manifests/include50_manifest.csv"
+  landmarks_dir: "data/landmarks"
+  processed_dir: "data/processed"
+
+preprocessing:
+  target_sequence_length: 32
+  max_interpolation_gap: 3
+  coordinate_origin: "mid_shoulder"
+  scale_reference: "inter_shoulder_distance"
+  fallback_scale: 0.20
+  mask_missing_landmarks: true
+
+features:
+  sequential_dim: 138 # 21 right + 21 left + 4 pose * 3
+  tabular_dim: 291
+
+models:
+  compact_transformer:
+    d_model: 128
+    nhead: 4
+    num_encoder_layers: 3
+    dim_feedforward: 256
+    dropout: 0.15
+    batch_size: 32
+    learning_rate: 0.001
+    weight_decay: 1.0e-4
+
+  bidirectional_gru:
+    hidden_size: 96
+    num_layers: 2
+    dropout: 0.30
+    batch_size: 32
+    learning_rate: 0.001
+
+  bidirectional_lstm:
+    hidden_size: 96
+    num_layers: 2
+    dropout: 0.35
+    batch_size: 32
+    learning_rate: 0.001
+
+  cnn1d:
+    channels: [64, 128, 128]
+    kernel_sizes: [3, 5, 3]
+    dropout: 0.30
+    batch_size: 32
+    learning_rate: 0.001
+
+  random_forest:
+    n_estimators: 150
+    max_depth: 18
+    class_weight: "balanced"
+    random_state: 42
+
+  svm:
+    kernel: "rbf"
+    C: 10.0
+    gamma: "scale"
+    probability: true
+
+training:
+  epochs: 50
+  early_stopping_patience: 10
+  seeds: [42, 123, 999]
+  device: "cpu"

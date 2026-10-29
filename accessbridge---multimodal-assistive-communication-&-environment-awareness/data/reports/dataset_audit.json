@@ -1,0 +1,41 @@
+{
+  "dataset_name": "INCLUDE-GREETING-SUBSET-v1",
+  "dataset_root": "D:\\DS MICRO PROJECT\\Greetings_1of2\\Greetings",
+  "total_samples": 106,
+  "num_classes": 5,
+  "classes": {
+    "Good afternoon": 22,
+    "Hello": 21,
+    "How are you": 21,
+    "Alright": 21,
+    "Good Morning": 21
+  },
+  "splits": {
+    "train": 75,
+    "test": 16,
+    "val": 15
+  },
+  "all_decodable": true,
+  "decodable_count": 106,
+  "first_frame_readable_count": 106,
+  "duration_seconds_stats": {
+    "mean": 2.7464150943396226,
+    "std": 0.5624676730253593,
+    "min": 1.64,
+    "max": 4.0,
+    "median": 2.68
+  },
+  "frame_count_stats": {
+    "mean": 68.66037735849056,
+    "std": 14.061691825633982,
+    "min": 41,
+    "max": 100,
+    "median": 67
+  },
+  "resolution_distribution": {
+    "1920x1080": 106
+  },
+  "fps_distribution": {
+    "25.0": 106
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "AccessBridge - Multimodal Assistive Communication & Environment Awareness",
+  "description": "AI-based multimodal assistive communication and environment awareness system combining Indian Sign Language recognition, live speech captioning, and environment reading with complete Data Science research benchmarks.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

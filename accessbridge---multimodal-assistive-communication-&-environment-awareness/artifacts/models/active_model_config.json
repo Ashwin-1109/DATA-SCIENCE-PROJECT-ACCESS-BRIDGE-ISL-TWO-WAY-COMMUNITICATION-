@@ -1,0 +1,19 @@
+{
+  "active_model_name": "cnn1d",
+  "dataset_name": "INCLUDE-GREETING-SUBSET-v1",
+  "num_classes": 5,
+  "class_names": [
+    "Hello",
+    "How are you",
+    "Alright",
+    "Good Morning",
+    "Good afternoon"
+  ],
+  "input_type": "sequence_32x138",
+  "checkpoint_file": "cnn1d_best.pth",
+  "metrics": {
+    "val_accuracy": 0.9333,
+    "train_loss": 0.3528,
+    "trained_at": "2026-10-07 08:54:23"
+  }
+}
